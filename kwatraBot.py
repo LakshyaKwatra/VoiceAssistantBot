@@ -10,8 +10,6 @@ import smtplib
 from pygame import mixer
 import speech_recognition as sr
 
-#from speech_recognition.__main__ import r, audio
-
 genie="Your wish is my command master!"
 
 mus_path=''
