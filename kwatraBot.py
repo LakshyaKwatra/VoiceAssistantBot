@@ -19,7 +19,7 @@ music_dir = 'E:/music'
 songs = os.listdir(music_dir)
 song_number=0
 
-pc="mbubibdbrbobfbrbebhbtbubr"
+pc="PASSWORD"
 
 now = datetime.datetime.now()
 curr_day=now.day
@@ -48,7 +48,8 @@ cmd2 = ['play music', 'play songs', 'play a song', 'open music player','change s
 cmd3 = ['tell a joke', 'tell me a joke', 'say something funny', 'tell something funny']
 mailcmds=['send mail','send email','write mail','write email']
 webcmds=['search the web','search on web','open website','open a website','search a url','url','browser','internet']
-jokes = ["An 8 year old girl went to her dad, who was working in the yard. She asked him, 'Daddy, what is sex?'The father was surprised that she would ask such a question, but decides that if she is old enough to ask the question, the she is old enough to get a straight answer. He proceeded to tell her all about the birds and the bees'. When he finished explaining, the little girl was looking at him with her mouth hanging open. The father asked her, 'Why did you ask this question? 'The little girl replied, Mom told me to tell you that dinner will be ready in just a couple of secs.","What kind of pig can you ignore at a party? A wild bore.","Is it true that cannibals don't eat clowns because they taste funny?"'Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.', 'My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.', 'Doctor: Im sorry but you suffer from a terminal illness and have only 10 to live. Patient: What do you mean, 10?, 10 what? Months? Weeks?!", Doctor: Nine.','What did the fish say when he swam into a wall?: Dam','What do you call a can opener that doesn’t work?: A cant opener','What do you call a fish with no eyes?: A fsh','Did you hear about the Italian chef who died?: He pasta-way','What’s the best thing about Switzerland?: I don’t know, but the flag is a big plus.','I invented a new word!: Plagiarism','Did you hear about the claustrophobic astronaut?: He just needed a little space']
+jokes = ["An 8 year old girl went to her dad, who was working in the yard. She asked him, 'Daddy, what is sex?'The father was surprised that she would ask such a question, but decides that if she is old enough to ask the question, the she is old enough to get a straight answer. He proceeded to tell her all about the birds and the bees'. When he finished explaining, the little girl was looking at him with her mouth hanging open. The father asked her, 'Why did you ask this question? 'The little girl replied, Mom told me to tell you that dinner will be ready in just a couple of secs.","What kind of pig can you ignore at a party? A wild bore.","Is it true that cannibals don't eat clowns because they taste funny?"
+'Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.', 'My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.', 'Doctor: Im sorry but you suffer from a terminal illness and have only 10 to live. Patient: What do you mean, 10?, 10 what? Months? Weeks?!", Doctor: Nine.','What did the fish say when he swam into a wall?: Dam','What do you call a can opener that doesn’t work?: A cant opener','What do you call a fish with no eyes?: A fsh','Did you hear about the Italian chef who died?: He pasta-way','What’s the best thing about Switzerland?: I don’t know, but the flag is a big plus.','I invented a new word!: Plagiarism','Did you hear about the claustrophobic astronaut?: He just needed a little space']
 websites = ['open youtube','open google','open facebook','open quora','open hackerrank','open codeforces','open instagram','open codechef','open spoj','open udemy','open pramp']
 muscmds=['stop music','end song', 'stop the music','stop']
 cmd5 = ['tell me the weather', 'weather', 'what about the weather']
@@ -72,8 +73,8 @@ def sendEmail(to, body):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('f20170365@pilani.bits-pilani.ac.in', ''.join(pc[::-1].split('b')))
-    server.sendmail('f20170365@pilani.bits-pilani.ac.in', to, body)
+    server.login('YOUR_EMAIL','PASSWORD')
+    server.sendmail('YOUR_EMAIL', to, body)
     server.close()
 
 def mail(rec_add):
